@@ -2,30 +2,40 @@
 
   <div fxLayoutAlign="center center" fxFlex="100" style="height: 100%" >
     <mat-card
-              fxFlex="90"
-              fxFlex.gt-xs="1 1 60%"
-              fxFlex.gt-md="35"
-              style="height: 65%"
-              fxLayoutAlign="center center">
+      fxFlex="90"
+      fxFlex.gt-xs="1 1 60%"
+      fxFlex.gt-md="35"
+      style="height: 90%"
+      fxLayoutAlign="center center">
 
       <div fxLayout="column"  fxLayoutGap="40px" fxFlex="90%"  fxFlex.gt-xs="1 1 80%">
         <div>
-          <mat-card-title fxLayoutAlign="center center">Login Here</mat-card-title>
+          <mat-card-title fxLayoutAlign="center center">Registration Here</mat-card-title>
         </div>
 
         <mat-card-content>
-          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
             <div fxLayout="column" fxLayoutGap="40px">
               <div fxLayout="column" fxLayoutGap="8px">
-                <p class="bold font-size-16">Email</p>
+                <p class="bold font-size-16">Full Name</p>
                 <mat-form-field>
-                  <mat-label> Email</mat-label>
+                  <mat-label> Full Name</mat-label>
+                  <input matInput formControlName="name">
+                </mat-form-field>
+                <p class="bold font-size-16">Email Address</p>
+                <mat-form-field>
+                  <mat-label> Email Address</mat-label>
                   <input matInput formControlName="email">
                 </mat-form-field>
                 <p class="bold font-size-16">Password</p>
                 <mat-form-field>
                   <mat-label> Password </mat-label>
-                  <input matInput formControlName="password">
+                  <input type="password" matInput formControlName="password">
+                </mat-form-field>
+                <p class="bold font-size-16">Confirm Password</p>
+                <mat-form-field>
+                  <mat-label> Confirm Password </mat-label>
+                  <input type="password" matInput formControlName="confirmPassword">
                 </mat-form-field>
               </div>
 
@@ -34,12 +44,11 @@
                   <button
                     mat-button
                     type="submit"
-                    class="login-btn-style">Login</button>
+                    class="login-btn-style">Registration</button>
                 </div>
 
                 <div fxLayout="column" fxLayoutGap="8px">
-                    <p> <a class="theme-color" href="#">Forget Password </a> </p>
-                  <p> <a class="theme-color" href="#">Registration </a> </p>
+                  <p> <a class="theme-color" href="#">login</a> </p>
                 </div>
               </div>
             </div>
