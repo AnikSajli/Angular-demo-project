@@ -2,3 +2,35 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.white-text {
+  color: #fff;
+  line-height: 30px;
+  font-family: "Poppins",sans-serif;
+}
+
+.light-indigo-text {
+  color: #6f42c1;
+  line-height: 30px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.deep-indigo-background {
+  background-color: #4B0082;
+}
+
+.mat-card-bg {
+  background-color: rgba(0,0,0,0.4);
+}

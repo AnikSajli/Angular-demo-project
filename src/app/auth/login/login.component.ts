@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { Router} from '@angular/router';
 
@@ -8,6 +8,9 @@ import { Router} from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  @Output()
+  registrationMode: EventEmitter<boolean> = new EventEmitter();
+
   loginForm = new FormGroup({
     email: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
@@ -34,6 +37,7 @@ export class LoginComponent implements OnInit {
   }
 
   onRegistration() {
-    this.router.navigate(['/signup']);
+    // this.router.navigate(['/signup']);
+    this.registrationMode.emit();
   }
 }

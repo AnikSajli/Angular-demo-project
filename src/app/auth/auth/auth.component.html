@@ -1,0 +1,15 @@
+<div style="height: 100%; width: 100%; overflow: hidden; scroll: no">
+  <video
+    id = "videoBG"
+    src="assets/sea-video.mp4"
+    poster="../../../assets/poster.png"
+    autoplay
+    loop
+    muted
+    type="video/mp4">
+  </video>
+     <app-login *ngIf="loginMode" (registrationMode) = "onLoginModeChange($event)"></app-login>
+  <app-signup *ngIf="!loginMode" (registrationMode) = "onSignupModeChange($event)"></app-signup>
+</div>
+
+

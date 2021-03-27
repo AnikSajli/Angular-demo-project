@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-style {
+  background: #dc3545 !important;
+  color: #E4E4E4 !important;
+  border: 1px solid #E4E4E4;
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  height: 50px;
+  cursor: pointer;
+  width: 170px;
+}

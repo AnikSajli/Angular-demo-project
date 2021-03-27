@@ -5,13 +5,8 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './auth/login/login.component';
-import {MatCardModule} from '@angular/material/card';
-import { ReactiveFormsModule} from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import { MatButtonModule} from '@angular/material/button';
 import {AuthModule} from './auth/auth.module';
+import {HomeModule} from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +18,8 @@ import {AuthModule} from './auth/auth.module';
     AppRoutingModule,
     NoopAnimationsModule,
     FlexLayoutModule,
-    AuthModule
+    AuthModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
