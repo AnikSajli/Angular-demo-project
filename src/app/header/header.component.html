@@ -1,1 +1,30 @@
-<p>header works!</p>
+<div style="height: 100%">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Eco-Hosting</span>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <a href="#" mat-button>Home</a>
+        <a href="#" mat-button>Packages</a>
+        <a href="#" mat-button>Help</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+      <mat-nav-list fxLayout="column">
+        <a href="#" mat-button>Home</a>
+        <a href="#" mat-button>Packages</a>
+        <a href="#" mat-button>Help</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+

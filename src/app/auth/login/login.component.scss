@@ -40,22 +40,10 @@
   cursor: pointer;
 }
 
-.img-style {
-  width: 60px;
-  height: 55px;
-  border: 15px solid rgba(255,255,255,0.1);
-  box-shadow: 0 15px 20px rgb(0 0 0 / 70%);
-  border-radius: 50%;
-}
 
 :host ::ng-deep .input {
   background-color: #4B0082;
   background-image: none !important;
-}
-
-::ng-deep .mat-focused .mat-form-field-label {
-  /*change color of label*/
-  color: white !important;
 }
 
 :host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {

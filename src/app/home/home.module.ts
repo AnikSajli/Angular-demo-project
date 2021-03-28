@@ -8,10 +8,21 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {HeaderComponent} from '../header/header.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import { PackagesComponent } from './packages/packages.component';
+import { FeaturesComponent } from './features/features.component';
 
 
 @NgModule({
-  declarations: [StartPageComponent],
+  declarations: [
+    StartPageComponent,
+    PackagesComponent,
+    FeaturesComponent
+  ],
   imports: [
     CommonModule,
     MatCardModule,
@@ -20,17 +31,33 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatInputModule,
     MatButtonModule,
     FlexLayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
+    MatIconModule,
     RouterModule.forChild([
       {
         path: '',
-        redirectTo: '/home',
+        redirectTo: '/start',
         pathMatch: 'full'
       },
       {
-        path: 'home',
+        path: 'start',
         component: StartPageComponent
+      },
+      {
+        path: 'packages',
+        component: PackagesComponent
+      },
+      {
+        path: 'features',
+        component: FeaturesComponent
       }
-    ])
+    ]),
+  ],
+  exports: [
   ]
 })
 export class HomeModule { }

@@ -19,6 +19,9 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     SignupComponent,
     AuthComponent
   ],
+  exports: [
+    SignupComponent
+  ],
   imports: [
     CommonModule,
     MatCardModule,
@@ -31,10 +34,6 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     RouterModule.forChild([
       {
         path: '',
-        component: AuthComponent
-      },
-      {
-        path: 'auth',
         component: AuthComponent
       },
       {

@@ -19,8 +19,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   font-size: 18px;
 }
 
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
 .font-size-30 {
   font-size: 30px;
+}
+
+.font-size-40 {
+  font-size: 40px;
 }
 
 .bold {
@@ -28,9 +40,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .deep-indigo-background {
-  background-color: #4B0082;
+  //background-color: #4B0082;
+  background-color:  #2D0A31;
 }
 
 .mat-card-bg {
   background-color: rgba(0,0,0,0.4);
+}
+
+.img-style {
+  width: 60px;
+  height: 55px;
+  border: 15px solid rgba(255,255,255,0.1);
+  box-shadow: 0 15px 20px rgb(0 0 0 / 70%);
+  border-radius: 50%;
+}
+
+.gray-txt {
+  color: #A5A7C5;
 }

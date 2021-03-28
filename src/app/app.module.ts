@@ -2,11 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import { HeaderComponent } from './header/header.component';
 import {AuthModule} from './auth/auth.module';
 import {HomeModule} from './home/home.module';
+import {CommonModule} from '@angular/common';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HeaderComponent} from './header/header.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -14,14 +20,25 @@ import {HomeModule} from './home/home.module';
     HeaderComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    NoopAnimationsModule,
     FlexLayoutModule,
     AuthModule,
-    HomeModule
+    HomeModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
+  exports: [
+    HeaderComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

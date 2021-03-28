@@ -14,11 +14,9 @@ export class AuthComponent implements OnInit {
 
   onLoginModeChange($event: boolean) {
     this.loginMode = false;
-    debugger
   }
 
   onSignupModeChange($event: boolean) {
     this.loginMode = true;
-    debugger
   }
 }
