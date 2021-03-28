@@ -1,7 +1,7 @@
 <div class="deep-indigo-background"
      fxLayoutAlign="center center"
      fxLayoutAlign.gt-xs="start start"
-     fxFlex
+     fxFlex="100"
      fxLayout="column"
       fxLayoutGap="20px">
 <div fxFlex="80" fxLayoutAlign="center center">
@@ -31,44 +31,68 @@
   </div>
 </div>
 
-  <div style="color: #dc3545"
-      fxLayoutAlign="center center">
-    <div
-      fxFlex="80">
-      <div fxLayout="column"
-      fxLayoutGap="20px">
-        <div class="white-text font-size-30">
-          Search new domain
-        </div>
-
-        <div class="white-text">
-          Supercharge your WordPress hosting with detailed website analytics,
-          marketing tools.
-        </div>
-
-        <div
-          fxLayoutAlign="start center"
-          class="search-wrapper">
-          <div class="search"
-               fxLayout="row"
-               fxLayoutAlign="space-between center">
-            <mat-icon><span class="material-icons">language</span></mat-icon>
-            <div>
-              <input placeholder="Search for a domain" formControlName="searchKey" fxFlex>
+  <div fxLayoutAlign="center center"
+        fxFlex="100">
+    <div fxFlex="80"
+         fxLayoutAlign="center center">
+      <div>
+        <div fxLayout="column"
+             fxLayout.gt-xs="row"
+             fxLayoutGap="20px">
+          <div>
+            <div class="white-text font-size-30">
+              Search new domain
             </div>
-            <mat-icon>search</mat-icon>
-          </div>
-        </div>
 
-        <div fxLayout="row" fxLayoutGap="8px">
-            <div class="font-size-20">.com </div>
-            <div class="font-size-16 white-text">$15.99 |    </div>
-            <span class="font-size-20">$.net     </span>
-            <span class="font-size-20 white-text">$10.99 |    </span>
+            <div class="white-text">
+              Supercharge your WordPress hosting with detailed website analytics,
+              marketing tools.
+            </div>
+          </div>
+
+          <div>
+            <div
+              fxLayoutAlign="start center"
+              class="search-wrapper">
+              <div class="search"
+                   fxLayout="row"
+                   fxLayoutAlign="space-between center">
+                <mat-icon><span class="material-icons">language</span></mat-icon>
+                <div [formGroup]="searchForm">
+                  <input placeholder="Search for a domain" formControlName="searchControl" fxFlex>
+                </div>
+                <mat-icon
+                  (click)="onSearch()"
+                  style="cursor: pointer">search</mat-icon>
+              </div>
+            </div>
+            <div>
+              <div fxLayout="row"
+                   fxLayoutAlign="center center"
+                   fxLayoutGap="8px">
+                <div class="font-size-20">.com </div>
+                <div class="font-size-16 white-text">$15.99 |</div>
+                <span class="font-size-20">$.net</span>
+                <span class="font-size-20 white-text">$10.99 |</span>
+              </div>
+
+              <div fxLayout="row"
+                   fxLayoutAlign="center center"
+                   fxLayoutGap="8px">
+                <div class="font-size-20">.com </div>
+                <div class="font-size-16 white-text">$15.99 |</div>
+                <span class="font-size-20">$.net</span>
+                <span class="font-size-20 white-text">$10.99 |</span>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
   </div>
+
 
 </div>
 

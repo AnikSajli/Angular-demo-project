@@ -37,6 +37,10 @@ import {TextFieldModule} from '@angular/cdk/text-field';
         component: AuthComponent
       },
       {
+        path: 'auth',
+        component: AuthComponent
+      },
+      {
         path: 'login',
         component: LoginComponent
       },

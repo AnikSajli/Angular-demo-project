@@ -41,7 +41,7 @@
                   <button
                     mat-button
                     type="submit"
-                    class="login-btn-style">Login</button>
+                    class="login-btn-style" [disabled]="!loginForm.valid">Login</button>
                 </div>
 
                 <div fxLayout="column">

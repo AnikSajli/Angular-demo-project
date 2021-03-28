@@ -8,7 +8,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {HeaderComponent} from '../header/header.component';
+import {HeaderComponent} from './header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
@@ -21,7 +21,8 @@ import {MatDividerModule} from '@angular/material/divider';
   declarations: [
     StartPageComponent,
     PackagesComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -59,6 +60,7 @@ import {MatDividerModule} from '@angular/material/divider';
     ]),
   ],
   exports: [
+    HeaderComponent
   ]
 })
 export class HomeModule { }

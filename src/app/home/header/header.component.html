@@ -1,5 +1,5 @@
 <div style="height: 100%">
-  <mat-toolbar
+  <mat-toolbar *ngIf="isLoggedIn"
   class="toolbar-style deep-indigo-background">
     <mat-toolbar-row>
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
@@ -14,7 +14,6 @@
         <a routerLink="/start" mat-button>HOME</a>
         <a routerLink="/packages" mat-button>PACKAGES</a>
         <a routerLink="/features" mat-button>FEATURES</a>
-        <a routerLink="/auth" mat-button>LOGIN</a>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -27,7 +26,6 @@
         <a routerLink="/start" mat-button>HOME</a>
         <a routerLink="/packages" mat-button>PACKAGES</a>
         <a routerLink="/features" mat-button>FEATURES</a>
-        <a routerLink="/auth" mat-button>LOGIN</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
