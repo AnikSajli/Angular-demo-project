@@ -15,7 +15,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { PackagesComponent } from './packages/packages.component';
 import { FeaturesComponent } from './features/features.component';
-
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -37,6 +37,7 @@ import { FeaturesComponent } from './features/features.component';
     MatIconModule,
     MatButtonModule,
     MatIconModule,
+    MatDividerModule,
     RouterModule.forChild([
       {
         path: '',
