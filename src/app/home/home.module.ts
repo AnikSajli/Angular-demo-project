@@ -16,13 +16,16 @@ import {MatIconModule} from '@angular/material/icon';
 import { PackagesComponent } from './packages/packages.component';
 import { FeaturesComponent } from './features/features.component';
 import {MatDividerModule} from '@angular/material/divider';
+import {NgxDatatableModule} from '@swimlane/ngx-datatable';
+import { DatatableComponent } from './datatable/datatable.component';
 
 @NgModule({
   declarations: [
     StartPageComponent,
     PackagesComponent,
     FeaturesComponent,
-    HeaderComponent
+    HeaderComponent,
+    DatatableComponent
   ],
   imports: [
     CommonModule,
@@ -39,6 +42,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    NgxDatatableModule,
     RouterModule.forChild([
       {
         path: '',
