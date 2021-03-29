@@ -12,15 +12,17 @@
               fxFlex="80"
               fxFlex.gt-xs="70"
               fxLayoutGap="24px">
-          <div class="gray-txt font-size-18">
+          <div class="font-size-18"
+                style="color: #9F78FF">
             Best Domain & hosting service provider
           </div>
 
-          <div class="white-text bold font-size-30">
+          <div class="white-text bold"
+               style="font-size: 55px; line-height: normal">
             <p>Powerful web hosting</p>
           </div>
 
-          <div class="white-text font-size-18">
+          <div class="gray-txt font-size-18">
             <p>Supercharge your WordPress hosting with detailed website analytics,
               marketing tools, security, and data backups all in one place.</p>
           </div>
@@ -35,7 +37,7 @@
       </div>
       <div fxShow.gt-sm="true"
            fxShow="false">
-        <img class="pink-img" src="../../../assets/pink-server.png">
+        <img class="pink-img" src="https://preview.colorlib.com/theme/ecohosting/assets/img/hero/hero_right.png">
       </div>
     </div>
 
@@ -77,7 +79,11 @@
                    fxLayoutAlign="space-between center">
                 <mat-icon><span class="material-icons">language</span></mat-icon>
                 <div [formGroup]="searchForm">
-                  <input placeholder="Search for a domain" formControlName="searchControl" fxFlex>
+                  <input
+                    class="font-size-18"
+                    placeholder="Search for a domain"
+                    formControlName="searchControl"
+                    fxFlex>
                 </div>
                 <mat-icon
                   (click)="onSearch()"

@@ -18,6 +18,8 @@ import { FeaturesComponent } from './features/features.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 import { DatatableComponent } from './datatable/datatable.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DatatableModalComponent } from './datatable-modal/datatable-modal.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { DatatableComponent } from './datatable/datatable.component';
     PackagesComponent,
     FeaturesComponent,
     HeaderComponent,
-    DatatableComponent
+    DatatableComponent,
+    DatatableModalComponent
   ],
   imports: [
     CommonModule,
@@ -43,6 +46,7 @@ import { DatatableComponent } from './datatable/datatable.component';
     MatIconModule,
     MatDividerModule,
     NgxDatatableModule,
+    MatDialogModule,
     RouterModule.forChild([
       {
         path: '',
@@ -64,7 +68,8 @@ import { DatatableComponent } from './datatable/datatable.component';
     ]),
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    DatatableComponent
   ]
 })
 export class HomeModule { }

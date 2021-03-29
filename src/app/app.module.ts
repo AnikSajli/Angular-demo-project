@@ -12,6 +12,20 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyCIPi6zcLW9yJmnXEXKhyGCVbwL0eCAugw",
+  authDomain: "angular-demo-project-f282a.firebaseapp.com",
+  databaseURL: "https://angular-demo-project-f282a-default-rtdb.firebaseio.com",
+  projectId: "angular-demo-project-f282a",
+  storageBucket: "angular-demo-project-f282a.appspot.com",
+  messagingSenderId: "94153433247",
+  appId: "1:94153433247:web:9de54eb9d0623493d242aa",
+  measurementId: "G-GYNJ38D1QX"
+};
 
 @NgModule({
   declarations: [
@@ -20,6 +34,8 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     CommonModule,
     BrowserModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FlexLayoutModule,

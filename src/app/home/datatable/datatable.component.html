@@ -1,14 +1,13 @@
 <div>
-  <h3>Datatable</h3>
   <ngx-datatable
     class="material"
     [rows]="rows"
-    [columns]="[{ name: 'Name' }, { name: 'Gender' }, { name: 'Company' }]"
+    [columns]="[{ name: 'Name' }, { name: 'Gender' }, { name: 'Company' }, { name: 'age' }]"
     [columnMode]="'force'"
     [headerHeight]="50"
     [footerHeight]="50"
     rowHeight="auto"
-    [limit]="10"
+    [limit]="2"
   >
   </ngx-datatable>
 </div>
