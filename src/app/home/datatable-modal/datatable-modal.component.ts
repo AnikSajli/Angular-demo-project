@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AngularFireDatabase, AngularFireList} from 'angularfire2/database';
 
 @Component({
   selector: 'app-datatable-modal',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatatableModalComponent implements OnInit {
 
-  constructor() { }
+  rows: any = [];
+  constructor(firebaseDB: AngularFireDatabase) {
+    const itemsRef: AngularFireList<any> = firebaseDB.list('datatable');
+    itemsRef.valueChanges().subscribe(response => {
+      this.rows = response;
+    });
+  }
 
   ngOnInit(): void {
   }

@@ -1,6 +1,7 @@
 <div style="height: 100%">
-  <mat-toolbar *ngIf="isLoggedIn"
-  class="toolbar-style deep-indigo-background">
+  <mat-toolbar *ngIf="visibility"
+  class="toolbar-style deep-indigo-background"
+  style="">
     <mat-toolbar-row>
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>

@@ -55,15 +55,18 @@ import { DatatableModalComponent } from './datatable-modal/datatable-modal.compo
       },
       {
         path: 'start',
-        component: StartPageComponent
+        component: StartPageComponent,
+        data: {header: true}
       },
       {
         path: 'packages',
-        component: PackagesComponent
+        component: PackagesComponent,
+        data: {header: true}
       },
       {
         path: 'features',
-        component: FeaturesComponent
+        component: FeaturesComponent,
+        data: {header: true}
       }
     ]),
   ],

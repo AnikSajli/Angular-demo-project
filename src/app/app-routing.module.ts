@@ -10,14 +10,15 @@ const routes: Routes = [
   },
   {
     path: 'auth',
-    component: AuthComponent
+    component: AuthComponent,
+    data: {header: false}
   },
   {
     path: 'home',
     loadChildren: () =>
       import('./home/home.module').then(
         (m) => m.HomeModule
-      ),
+      )
   },
 ];
 

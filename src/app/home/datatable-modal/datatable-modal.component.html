@@ -1,10 +1,15 @@
-<h2 mat-dialog-title>Data Table</h2>
+<h2 mat-dialog-title fxLayoutAlign="center">Data Table</h2>
 <mat-dialog-content class="mat-typography">
-  <app-datatable></app-datatable>
+
+  <div style="min-width: 80vh; height: auto">
+    <app-datatable></app-datatable>
+  </div>
+
+<!--  <p>Achieve the maximum speed possible on the Web Platform today, and take it further, via Web-->
+<!--    Workers and server-side rendering. Angular puts you in control over scalability. Meet huge-->
+<!--    data requirements by building data models on RxJS, Immutable.js or another push-model.</p>-->
+
 </mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
-</mat-dialog-actions>
+
 
 
